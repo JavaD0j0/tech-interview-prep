@@ -1,5 +1,10 @@
 package easy;
 
+/*
+ * Time Complexity: O(log n), where n is the length of the binary representation of the number.
+ * 
+ * Space Complexity: O(log n)
+ */
 public class NumberComplement {
     public static int findComplement(int num) {
         // Find the number of bits in the binary representation of the number
@@ -15,7 +20,8 @@ public class NumberComplement {
     public static void main(String[] args) {
         System.out.println();
         System.out.println();
-        System.out.println(findComplement(5));  // Output will be 2
-        System.out.println(findComplement(1));  // Output will be 0
+
+        System.out.println(findComplement(5));
+        System.out.println(findComplement(1));
     }
 }
