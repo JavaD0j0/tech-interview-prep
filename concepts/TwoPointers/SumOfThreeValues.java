@@ -1,4 +1,4 @@
-package concepts.TwoPointers;
+package concepts.twopointers;
 
 import java.util.*;
 

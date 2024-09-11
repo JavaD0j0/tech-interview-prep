@@ -1,4 +1,4 @@
-package concepts.TwoPointers;
+package concepts.twopointers;
 
 /*
  * Time Complexity: O(n), since we traverse the entire array once.

@@ -1,5 +1,10 @@
-package concepts.TwoPointers;
+package concepts.twopointers;
 
+/*
+ * Time Complexity: O(n)
+ * 
+ * Space Complexity: O(n)
+ */
 public class ReverseWordsInString {
     public static String reverseWords(String s) {
         s = s.replaceAll("\\s+", " ").trim();

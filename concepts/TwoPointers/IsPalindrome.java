@@ -1,4 +1,4 @@
-package concepts.TwoPointers;
+package concepts.twopointers;
 
 /*
  * Time Complexity: O(n), where n is the length of the string. However, the algorithm
