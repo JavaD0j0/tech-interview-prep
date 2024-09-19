@@ -2,7 +2,6 @@ package concepts.twopointers;
 
 /*
  * Time Complexity: O(n), where n is the length of the linked list.
- * 
  * Space Complexity: O(1)
  */
 public class RemoveNthNodeFromEnd {

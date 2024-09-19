@@ -2,7 +2,6 @@ package concepts.twopointers;
 
 /*
  * Time Complexity: O(n), since we traverse the entire array once.
- * 
  * Space Complexity: O(1)
  */
 public class SortColors {

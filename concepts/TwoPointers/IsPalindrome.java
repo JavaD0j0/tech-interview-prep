@@ -1,9 +1,7 @@
 package concepts.twopointers;
 
 /*
- * Time Complexity: O(n), where n is the length of the string. However, the algorithm
- * will only run (n/2) times, since two pointers are traversing toward each other.
- * 
+ * Time Complexity: O(n), where n is the length of the string.
  * Space Complexity: O(1)
  */
 public class IsPalindrome {

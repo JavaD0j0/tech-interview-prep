@@ -2,7 +2,6 @@ package easy;
 
 /*
  * Time Complexity: O(log n), where n is the length of the binary representation of the number.
- * 
  * Space Complexity: O(log n)
  */
 public class NumberComplement {

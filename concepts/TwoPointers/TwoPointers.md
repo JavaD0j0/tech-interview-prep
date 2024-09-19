@@ -4,10 +4,6 @@ The two pointers pattern is a versatile technique used in problem-solving to eff
 
 The pointers can be used to iterate through the data structure in one or both directions, depending on the problem statement. For example, to identify whether a string is a palindrome, we can use one pointer to iterate the string from the beginning and the other to iterate it from the end. At each step, we can compare the values of the two pointers and see if they meet the palindrome properties.
 
-Example:
-
-    MADAM -> is palindrome 
-
 The naive approach to solving this problem would be using nested loops, with a time complexity of O(n^2). However, by using two pointers moving toward the middle from either end, we exploit the symmetry property of palindromic strings. This allows us to compare the elements in a single loop, making the algorithm more efficient with a time complexity of O(n).
 
 ## Conditions
@@ -20,7 +16,7 @@ This pattern matches your problem if all these conditions are fulfilled:
 
 ## Examples
 
-Other problems that can be solved with this approach:
+Problems that can be solved with this approach:
 
 1. `Reversing an Array`: Given an array of Integers, reverse it in place.
 2. `Pair with given Sum in a Sorted Array`: Given a sorted array of Integers, find a pair in the array that sums to a number T.
