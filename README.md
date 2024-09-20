@@ -7,30 +7,100 @@ Solution to `Easy` and `Medium` LeetCode problems are provided as well (in Java)
 
 ## Practice Strategy
 
-### Four Week Plan
+### Week 1-2: Fundamentals of Data Structures
 
-#### Week 1: Core Concepts and Easy to Medium Problems
+1) Arrays and Strings
 
-    Focus Areas: Arrays, Linked Lists, Stacks, Queues, Hash Maps/Sets.
-    Algorithms: Sorting, Binary Search.
-    Practice Problems: Start with easy problems on these topics, and quickly move to medium-level problems.
-    Daily Goal: Solve 1-2 problems, focusing on writing code without running it.
+        Basics: traversal, insertion, deletion
+        Common problems: Two-pointer techniques, sliding window, palindrome checks
+        Key algorithms: Reverse array/string, maximum subarray (Kadane’s algorithm)
 
-#### Week 2: Recursion and Advanced Data Structures
+2) Linked Lists
 
-    Focus Areas: Trees (Binary Trees, BSTs), Heaps, Graphs.
-    Algorithms: Recursion, BFS, DFS.
-    Practice Problems: Focus on problems that require recursive thinking, tree traversal, and graph algorithms.
-    Daily Goal: Solve at least 2 medium-level problems, try solving them in 15 minutes or less.
+        Types: Singly, Doubly, Circular
+        Operations: Insertion, deletion, reversing a list
+        Common problems: Detect cycle, find middle element, merge two sorted lists
 
-#### Week 3: Optimization and Harder Problems
+3) Stacks and Queues
 
-    Focus Areas: Dynamic Programming (if relevant), Divide-and-Conquer.
-    Practice Problems: Mix of medium and hard problems. Include problems on dynamic programming and divide-and-conquer.
-    Daily Goal: Solve 1-2 problems per day, with an emphasis on time and space optimization.
+        Implementation using arrays and linked lists
+        Operations: Push, pop, enqueue, dequeue
+        Common problems: Evaluate expressions, valid parentheses, stock span problem
 
-#### Week 4: Mock Interviews and Review
+### Week 3-4: Recursion and Backtracking
 
-    Mock Interviews: Simulate real interview conditions using CoderPad or other tools. Time yourself strictly (15 minutes per problem).
-    Review: Go over all topics again, especially those that are challenging.
-    Daily Goal: Conduct mock interviews and review your performance critically. Focus on clarity, correctness, and speed.
+1) Recursion
+
+        Basics: Recursive tree, base case, recursive case
+        Problems: Factorial, Fibonacci, power of a number
+        Key concepts: Tail recursion, memoization
+
+2) Backtracking
+
+        Common algorithms: N-Queens, permutations, combinations, Sudoku solver
+        Problem-solving patterns: Exhaustive search, pruning search space
+
+### Week 5-6: Trees
+
+1) Binary Trees
+
+        Traversals: Preorder, Inorder, Postorder, Level-order
+        Common problems: Height, diameter of a tree, check for balanced tree
+
+2) Binary Search Trees (BST)
+
+        Operations: Insertion, deletion, search
+        Common problems: Validate BST, find the k-th smallest/largest element
+
+3) Advanced Trees
+
+        Heaps (Max/Min): Heapify, extract max/min, priority queues
+        Trie: Prefix-based search, autocomplete systems
+
+### Week 7-8: Hashing and Searching
+
+1) Hashing
+
+        Hash maps: Implementations using chaining, open addressing
+        Common problems: Two-sum, group anagrams, longest substring without repeating characters
+
+2) Searching Algorithms
+
+        Binary search (on sorted arrays)
+        Search variations: Search in rotated arrays, search in matrix
+
+### Week 9-10: Dynamic Programming
+
+1) Dynamic Programming (DP)
+
+        Memoization vs. tabulation
+        Common problems: Fibonacci, coin change, longest common subsequence, knapsack problem
+
+2) DP on Grids and Strings
+
+        0/1 Knapsack, edit distance, unique paths
+        Problem-solving patterns: Overlapping subproblems, optimal substructure
+
+### Week 11-12: Graph Algorithms
+
+1) Graph Representation and Traversals
+
+        BFS and DFS: Search algorithms, detecting cycles
+        Problems: Connected components, shortest path in unweighted graph
+
+2) Advanced Graph Algorithms
+
+        Dijkstra's, Bellman-Ford (shortest path)
+        Topological sorting, minimum spanning tree (Kruskal, Prim)
+        Problems: Word ladder, course schedule
+
+### Week 13-14: Advanced Topics
+
+1) Greedy Algorithms
+
+        Problems: Activity selection, Huffman coding, minimum number of coins
+        Greedy choice property, optimal substructure
+
+2) Segment Trees and Fenwick Trees
+
+        Problems: Range queries, point updates

@@ -59,8 +59,9 @@ public class CircularArrayLoop {
     // A function to calculate the next step
     public static int nextStep(int pointer, int value, int size) {
         int result = (pointer + value) % size;
-        if (result < 0)
+        if (result < 0) {
             result += size;
+        }
         return result;
     }
     
