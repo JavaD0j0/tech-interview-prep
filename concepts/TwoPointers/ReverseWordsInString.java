@@ -1,10 +1,21 @@
 package concepts.twopointers;
 
 /*
- * Time Complexity: O(n)
- * Space Complexity: O(n)
+    Given a sentence, reverse the order of its words without affecting the order of letters within the given word.
+
+    Constraints:
+        1) The sentence contains English uppercase and lowercase letters, digits, and spaces.
+        2) 1 ≤ sentence.length ≤ 10^4
+        3) The order of the letters within a word is not to be reversed.
+
+        Note: The input string may contain leading or trailing spaces or multiple spaces between words. The returned string, however, 
+        should only have a single space separating each word. Do not include any extra spaces.
  */
 public class ReverseWordsInString {
+    /*
+    * Time Complexity: O(n)
+    * Space Complexity: O(n)
+    */
     public static String reverseWords(String s) {
         s = s.replaceAll("\\s+", " ").trim();
         StringBuilder sb = new StringBuilder(s);

@@ -12,7 +12,6 @@ import java.util.Deque;
         3) 1 ≤ w ≤ nums.length
  */
 public class FindMaximum {
-    
     /*
      * Time Complexity: O(n)
      * Space Complexity: O(w), where w is the window size

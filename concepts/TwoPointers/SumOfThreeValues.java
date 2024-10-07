@@ -3,10 +3,21 @@ package concepts.twopointers;
 import java.util.*;
 
 /*
- * Time Complexity: O(n^2)
- * Space Complexity: O(log n)
+    Given an array of integers, nums, and an integer value, target, determine if there are any three integers in nums whose sum is equal 
+    to the target, that is, nums[i] + nums[j] + nums[k] == target. Return TRUE if three such integers exist in the array. Otherwise, return FALSE.
+
+    Note: A valid triplet consists of elements with distinct indexes. This means, for the triplet nums[i], nums[j], and nums[k], i ≠ j, i ≠ k and j ≠ k.
+
+    Constraints:
+        1) 3 ≤ nums.length ≤ 500
+        2) −10^3 ≤ nums[i] ≤ 10^3
+        3) −10^3 ≤ target ≤ 10^3
  */
 public class SumOfThreeValues {
+    /*
+    * Time Complexity: O(n^2)
+    * Space Complexity: O(log n)
+    */
     public static boolean findSumOfThree(int[] nums, int target) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 2; i++) {

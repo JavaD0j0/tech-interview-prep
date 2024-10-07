@@ -47,7 +47,7 @@ public class LinkedListCycle {
         System.out.println(detectCycle(head));
     }
 
-    private static class LinkedListNode {
+    public static class LinkedListNode {
         public int data;
         public LinkedListNode next;
 

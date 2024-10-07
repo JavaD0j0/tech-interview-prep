@@ -1,10 +1,17 @@
 package concepts.twopointers;
 
 /*
- * Time Complexity: O(n), where n is the length of the string.
- * Space Complexity: O(1)
+    Write a function that takes a string as input and checks whether it can be a valid palindrome by removing at most one character from it.
+
+    Constraints:
+        1) 1 ≤ string.length ≤ 10^3
+        2) The string only consists of English letters.
  */
 public class IsPalindromeII {
+    /*
+    * Time Complexity: O(n), where n is the length of the string.
+    * Space Complexity: O(1)
+    */
     public static boolean isPalindrome(String s) {
         int left = 0;
         int right = s.length() - 1;

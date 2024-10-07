@@ -22,7 +22,6 @@ import java.util.Set;
         3) 1 ≤ k ≤ 10
  */
 public class RepeatedDnaSequence {
-    
     /*
      * Time Complexity: 
      *  - Average Case: O(n)
@@ -33,7 +32,7 @@ public class RepeatedDnaSequence {
         int stringLength = dna.length();
 
         if (stringLength < k) {
-            return new HashSet<String>();
+            return new HashSet<>();
         }
 
         Map<Character, Integer> mapping = new HashMap<>();

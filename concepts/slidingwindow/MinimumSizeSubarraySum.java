@@ -10,7 +10,6 @@ package concepts.slidingwindow;
         3) 1 ≤ nums[i] ≤ 10^3
  */
 public class MinimumSizeSubarraySum {
-    
     /*
      * Time Complexity: O(n)
      * Space Complexity: O(1)
@@ -23,6 +22,8 @@ public class MinimumSizeSubarraySum {
         for (int end = 0; end < nums.length; end++) {
             sum += nums[end];
 
+            // if sum is greater than target, shrink the window from the left side of the array
+            // until the sum is less than or equal to target and update the minimum window size
             while (sum >= target) {
                 int currSubArrSize = (end + 1) - start;
                 windowSize = Math.min(windowSize, currSubArrSize);

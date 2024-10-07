@@ -12,7 +12,6 @@ package concepts.slidingwindow;
         3) 0 ≤ prices[i] ≤ 10^5
  */
 public class BestTimeToBuyAndSellStock {
-    
     /*
      * Time Complexity: O(n)
      * Space Complexity: O(1)

@@ -15,7 +15,6 @@ import java.util.*;
         2) 1 ≤ s.length, t.length ≤10^3
  */
 public class MinimumWindowSubstring {
-    
     /*
      * Time Complexity: O(n + m), where n is the length of the string s and m is the length of the string t
      * Space Complexity: O(1), since we will be storing at most 52 characters (uppercase and lowercase English letters) in a hashmap

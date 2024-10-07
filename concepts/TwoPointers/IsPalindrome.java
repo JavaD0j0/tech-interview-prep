@@ -1,10 +1,19 @@
 package concepts.twopointers;
 
 /*
- * Time Complexity: O(n), where n is the length of the string.
- * Space Complexity: O(1)
+    Write a function that takes a string, s, as an input and determines whether or not it is a palindrome.
+
+    Note: A palindrome is a word, phrase, or sequence of characters that reads the same backward as forward.
+
+    Constraints:
+        1) 1 ≤ s.length ≤ 2×10^5
+        2) The string s will not contain any white space and will only consist of ASCII characters(digits and letters).
  */
 public class IsPalindrome {
+    /*
+    * Time Complexity: O(n), where n is the length of the string.
+    * Space Complexity: O(1)
+    */
     public static boolean isPalindrome(String s) {
         int left = 0;
         int right = s.length() - 1;

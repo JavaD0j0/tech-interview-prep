@@ -9,7 +9,6 @@ import java.util.*;
         2) str consists of English letters, digits, and spaces.
  */
 public class LongestSubstringWithoutRepeatingChars {
-    
     /*
      * Time Complexity: O(n)
      * Space Complexity: O(1), since there's only a limited number of unique characters that could appear in the input string

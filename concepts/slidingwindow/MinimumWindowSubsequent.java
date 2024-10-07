@@ -23,7 +23,6 @@ package concepts.slidingwindow;
         3) str1 and str2 consist of uppercase and lowercase English letters.
  */
 public class MinimumWindowSubsequent {
-    
     /*
      * Time Complexity: O(n x m)
      * Space Complexity: O(1)

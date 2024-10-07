@@ -13,7 +13,6 @@ import java.util.Map;
         3) 0 ≤ k ≤ s.length
  */
 public class LongestRepeatingCharacterReplacement {
-
     /*
      * Time Complexity: O(n)
      * Space Complexity: O(1), since we will be storing at most 26 characters in a hashmap
@@ -32,6 +31,8 @@ public class LongestRepeatingCharacterReplacement {
             
             mostFreqChar = Math.max(mostFreqChar, charFreq.get(currentChar));
 
+            // If the difference between the most frequent character and the current character is greater than k,
+            // we need to remove some characters from the left side of the window.
             if (end - start + 1 - mostFreqChar > k) {
                 charFreq.put(s.charAt(start), charFreq.get(s.charAt(start)) - 1);
                 start += 1;
