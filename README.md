@@ -12,6 +12,41 @@ great to review before any technical interview.
 
 Solution to `Easy` and `Medium` LeetCode problems are provided as well (in Java).
 
+## 10 Key Rules
+
+> Follow the below patterns during technical questions in order to solve the problem successfully and using the right approach.
+
+- <b>Rule #1</b>: If the given input is a sorted array, linked list, or array list.
+	- Try to use either Binary Search Tree (BST) or Two Pointers.
+
+- <b>Rule #2</b>: If the question asks to return `k` elements amongts given total `N` elements.
+	- Try using Heap
+
+- <b>Rule #3</b>: Most graph or tree questions.
+	- Try using either Depth First Seach (DPS) or Breadth First Search (BFS)
+
+- <b>Rule #4</b>: If we need to check all permutations & combinations of the input.
+	- Try using either Backtracking or Breadth First Search (BST)
+
+- <b>Rule #5</b>: Every Recursive solution.
+	- Can be solved Iteratively using Stacks
+
+- <b>Rule #6</b>: For any array if there exist a O(n^2) solution. There are two other solutions possible
+	- We can use HashMap to solve the problem in O(n) time and O(n) space complexity.
+	- Use Sorting to solve the problem in O(nlogn) time and O(1) space complexity.
+
+- <b>Rule #7</b>: If the problem is asking for maximization or minimization.
+	- Try using Dynamic Programming (DP)
+
+- <b>Rule #8</b>: If we need to find common substring among set of Strings.
+	- Try using either Trie or HashMap
+
+- <b>Rule #9</b>: IF there is a linked list problem and we cannot use extra space.
+	- Use Fast and Slow Pointers
+
+- <b>Rule #10</b>: Whenever we need to search a word, or manipulate bunch of Strings.
+	- Try using Trie
+
 ## Easy Example Problems
 
 | **Category**             | **Type of Problem**                                              | **Example Problems**                                                |
@@ -72,96 +107,96 @@ Solution to `Easy` and `Medium` LeetCode problems are provided as well (in Java)
 
 1) Arrays and Strings
 
-        Basics: traversal, insertion, deletion
-        Common problems: Two-pointer techniques, sliding window, palindrome checks
-        Key algorithms: Reverse array/string, maximum subarray (Kadane’s algorithm)
+	- Basics: traversal, insertion, deletion
+	- Common problems: Two-pointer techniques, sliding window, palindrome checks
+	- Key algorithms: Reverse array/string, maximum subarray (Kadane’s algorithm)
 
 2) Linked Lists
 
-        Types: Singly, Doubly, Circular
-        Operations: Insertion, deletion, reversing a list
-        Common problems: Detect cycle, find middle element, merge two sorted lists
+	- Types: Singly, Doubly, Circular
+	- Operations: Insertion, deletion, reversing a list
+	- Common problems: Detect cycle, find middle element, merge two sorted lists
 
 3) Stacks and Queues
 
-        Implementation using arrays and linked lists
-        Operations: Push, pop, enqueue, dequeue
-        Common problems: Evaluate expressions, valid parentheses, stock span problem
+	- Implementation using arrays and linked lists
+	- Operations: Push, pop, enqueue, dequeue
+	- Common problems: Evaluate expressions, valid parentheses, stock span problem
 
 ### Week 3-4: Recursion and Backtracking
 
 1) Recursion
 
-        Basics: Recursive tree, base case, recursive case
-        Problems: Factorial, Fibonacci, power of a number
-        Key concepts: Tail recursion, memoization
+	- Basics: Recursive tree, base case, recursive case
+	- Problems: Factorial, Fibonacci, power of a number
+	- Key concepts: Tail recursion, memoization
 
 2) Backtracking
 
-        Common algorithms: N-Queens, permutations, combinations, Sudoku solver
-        Problem-solving patterns: Exhaustive search, pruning search space
+	- Common algorithms: N-Queens, permutations, combinations, Sudoku solver
+	- Problem-solving patterns: Exhaustive search, pruning search space
 
 ### Week 5-6: Trees
 
 1) Binary Trees
 
-        Traversals: Preorder, Inorder, Postorder, Level-order
-        Common problems: Height, diameter of a tree, check for balanced tree
+	- Traversals: Preorder, Inorder, Postorder, Level-order
+	- Common problems: Height, diameter of a tree, check for balanced tree
 
 2) Binary Search Trees (BST)
 
-        Operations: Insertion, deletion, search
-        Common problems: Validate BST, find the k-th smallest/largest element
+	- Operations: Insertion, deletion, search
+	- Common problems: Validate BST, find the k-th smallest/largest element
 
 3) Advanced Trees
 
-        Heaps (Max/Min): Heapify, extract max/min, priority queues
-        Trie: Prefix-based search, autocomplete systems
+	- Heaps (Max/Min): Heapify, extract max/min, priority queues
+	- Trie: Prefix-based search, autocomplete systems
 
 ### Week 7-8: Hashing and Searching
 
 1) Hashing
 
-        Hash maps: Implementations using chaining, open addressing
-        Common problems: Two-sum, group anagrams, longest substring without repeating characters
+	- Hash maps: Implementations using chaining, open addressing
+	- Common problems: Two-sum, group anagrams, longest substring without repeating characters
 
 2) Searching Algorithms
 
-        Binary search (on sorted arrays)
-        Search variations: Search in rotated arrays, search in matrix
+	- Binary search (on sorted arrays)
+	- Search variations: Search in rotated arrays, search in matrix
 
 ### Week 9-10: Dynamic Programming
 
 1) Dynamic Programming (DP)
 
-        Memoization vs. tabulation
-        Common problems: Fibonacci, coin change, longest common subsequence, knapsack problem
+	- Memoization vs. tabulation
+	- Common problems: Fibonacci, coin change, longest common subsequence, knapsack problem
 
 2) DP on Grids and Strings
 
-        0/1 Knapsack, edit distance, unique paths
-        Problem-solving patterns: Overlapping subproblems, optimal substructure
+	- 0/1 Knapsack, edit distance, unique paths
+	- Problem-solving patterns: Overlapping subproblems, optimal substructure
 
 ### Week 11-12: Graph Algorithms
 
 1) Graph Representation and Traversals
 
-        BFS and DFS: Search algorithms, detecting cycles
-        Problems: Connected components, shortest path in unweighted graph
+	- BFS and DFS: Search algorithms, detecting cycles
+	- Problems: Connected components, shortest path in unweighted graph
 
 2) Advanced Graph Algorithms
 
-        Dijkstra's, Bellman-Ford (shortest path)
-        Topological sorting, minimum spanning tree (Kruskal, Prim)
-        Problems: Word ladder, course schedule
+	- Dijkstra's, Bellman-Ford (shortest path)
+	- Topological sorting, minimum spanning tree (Kruskal, Prim)
+	- Problems: Word ladder, course schedule
 
 ### Week 13-14: Advanced Topics
 
 1) Greedy Algorithms
 
-        Problems: Activity selection, Huffman coding, minimum number of coins
-        Greedy choice property, optimal substructure
+	- Problems: Activity selection, Huffman coding, minimum number of coins
+	- Greedy choice property, optimal substructure
 
 2) Segment Trees and Fenwick Trees
 
-        Problems: Range queries, point updates
+	- Problems: Range queries, point updates
