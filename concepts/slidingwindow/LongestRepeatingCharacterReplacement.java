@@ -19,26 +19,33 @@ public class LongestRepeatingCharacterReplacement {
      */
     public static int longestRepeatingCharacterReplacement(String s, int k) {
 
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+
+        if (s.length() == 1) {
+            return 1;
+        }
+
         int lengthOfMaxSubstring = 0;
-        int start = 0;
-        Map<Character, Integer> charFreq = new HashMap<>();
+        int left = 0;
         int mostFreqChar = 0;
+        Map<Character, Integer> map = new HashMap<>();
 
-        for (int end = 0; end < s.length(); ++end) {
-            char currentChar = s.charAt(end);
+        for (int right = 0; right < s.length(); ++right) {
+            char currentChar = s.charAt(right);
             
-            charFreq.put(currentChar, charFreq.getOrDefault(currentChar, 0) + 1);
-            
-            mostFreqChar = Math.max(mostFreqChar, charFreq.get(currentChar));
+            map.put(currentChar, map.getOrDefault(currentChar, 0) + 1);
+            mostFreqChar = Math.max(mostFreqChar, map.get(currentChar));
 
-            // If the difference between the most frequent character and the current character is greater than k,
-            // we need to remove some characters from the left side of the window.
-            if (end - start + 1 - mostFreqChar > k) {
-                charFreq.put(s.charAt(start), charFreq.get(s.charAt(start)) - 1);
-                start += 1;
+            // If length of current window - most frequent character > k, we need to shrink the window
+            int length = right - left + 1;
+            if (length - mostFreqChar > k) {
+                map.put(s.charAt(left), map.get(s.charAt(left)) - 1);
+                left++;
             }
 
-            lengthOfMaxSubstring = Math.max(lengthOfMaxSubstring, end - start + 1);
+            lengthOfMaxSubstring = Math.max(lengthOfMaxSubstring, length);
         }
 
         return lengthOfMaxSubstring;
