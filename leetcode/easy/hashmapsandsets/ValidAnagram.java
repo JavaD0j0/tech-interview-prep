@@ -20,7 +20,6 @@ public class ValidAnagram {
         for (char c : s.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        System.out.println("Before: " + map.toString());
 
         for (char c : t.toCharArray()) {
             if (map.getOrDefault(c, 0) > 0) {
@@ -30,7 +29,6 @@ public class ValidAnagram {
             }
         }
 
-        System.out.println("After: " + map.toString());
         return true;
     }
 

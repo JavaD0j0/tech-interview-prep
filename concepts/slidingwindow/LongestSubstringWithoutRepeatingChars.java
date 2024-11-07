@@ -14,35 +14,24 @@ public class LongestSubstringWithoutRepeatingChars {
      * Space Complexity: O(1), since there's only a limited number of unique characters that could appear in the input string
      */
     public static int findLongestSubstring(String str) {
-        if (str.length() == 0) {
+        if (str == null || str.length() == 0) {
             return 0;
         }
 
-        int n = str.length();
-        int windowStart = 0, longest = 0, windowLength = 0, i = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        int maxLength = 0;
+        int start = 0;
 
-        HashMap<Character, Integer> lastSeenAt = new HashMap<>();
-
-        for (i = 0; i < n; i++) {
-            if (!lastSeenAt.containsKey(str.charAt(i))) {
-                lastSeenAt.put(str.charAt(i), i);
-            } else { 
-                if (lastSeenAt.get(str.charAt(i)) >= windowStart) {
-                    windowLength = i - windowStart;
-                    if (longest < windowLength) {
-                        longest = windowLength;
-                    }
-                    windowStart = lastSeenAt.get(str.charAt(i)) + 1;
-                }
-                lastSeenAt.replace(str.charAt(i), i);
+        for (int end = 0; end < str.length(); end++) {
+            char currentChar = str.charAt(end);
+            if (map.containsKey(currentChar)) {
+                // if the character already exists in the map, move the start pointer to the right
+                start = Math.max(start, map.get(currentChar) + 1);
             }
+            map.put(currentChar, end);
+            maxLength = Math.max(maxLength, end - start + 1);
         }
-
-        if (longest < i - windowStart) {
-            longest = i - windowStart;
-        }
-
-        return longest;
+        return maxLength;
     }
 
     public static void main(String[] args) {

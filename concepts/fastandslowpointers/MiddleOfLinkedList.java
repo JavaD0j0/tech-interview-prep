@@ -6,7 +6,6 @@ package concepts.fastandslowpointers;
 
     Constraints:
     Let n be the number of nodes in a linked list.
-
         1) 1 ≤ n ≤ 100
         2) 1 ≤ node.data ≤ 100
         3) head != NULL
@@ -20,6 +19,7 @@ public class MiddleOfLinkedList {
      
         LinkedListNode slow = head;
         LinkedListNode fast = head;
+        
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;

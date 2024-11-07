@@ -6,7 +6,6 @@ package concepts.fastandslowpointers;
 
     Constraints:
     Let n be the number of nodes in a linked list.
-
         1) 0 ≤ n ≤ 500
         2) −10^5 ≤ Node.data ≤ 10^5
  */
@@ -18,7 +17,7 @@ public class LinkedListCycle {
      */
     public static boolean detectCycle(LinkedListNode head) {
 
-        if (head == null) {
+        if (head == null || head.next == null) {
             return false;
         }
 
