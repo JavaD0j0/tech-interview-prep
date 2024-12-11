@@ -39,37 +39,46 @@ public class KSmallestElementInSortedMatrix {
         return elements.get(k - 1);
     }
 
+    /*
+     * Time Complexity: O(((min(m, k) + k) * log(min(m, k))))
+     * Space Complexity: O(m)
+     */
     public static int kthSmallest_optimized(int[][] matrix, int k) {
-        int rowCount = matrix.length;
-        PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        int n = matrix.length;
         
-        for (int i = 0; i < Math.min(rowCount, k); i++) {
-            minHeap.offer(new int[]{matrix[i][0], i, 0});
+        // Min-heap to store elements along with their row and column indices
+        PriorityQueue<Element> minHeap = new PriorityQueue<>((a, b) -> Integer.compare(a.value, b.value));
+        
+        // Initialize the heap with the first element of each row
+        for (int i = 0; i < n; i++) {
+            minHeap.add(new Element(matrix[i][0], i, 0));
         }
         
-        int numbersChecked = 0;
-        int smallestElement = 0;
-        
-        while (!minHeap.isEmpty()) {
-            // get the smallest number from top of heap and its corresponding row and column
-            int[] curr = minHeap.poll();
-            smallestElement = curr[0];
-            int rowIndex = curr[1];
-            int colIndex = curr[2];
-            numbersChecked++;
-
-            // when numbersChecked equals k, we'll return smallestElement
-            if (numbersChecked == k) {
-                break;
-            }
+        // Extract the smallest element k times
+        int result = 0;
+        for (int i = 0; i < k; i++) {
+            Element current = minHeap.poll();
+            result = current.value;
             
-            // if the current element has a next element in its row, add the next element of that row to the minHeap
-            if (colIndex + 1 < matrix[rowIndex].length) {
-                minHeap.offer(new int[]{matrix[rowIndex][colIndex + 1], rowIndex, colIndex + 1});
+            // If there is a next element in the same row, add it to the heap
+            if (current.col + 1 < n) {
+                minHeap.add(new Element(matrix[current.row][current.col + 1], current.row, current.col + 1));
             }
         }
-
-        return smallestElement;
+        
+        return result;
+    }
+    
+    private static class Element {
+        int value;
+        int row;
+        int col;
+        
+        public Element(int value, int row, int col) {
+            this.value = value;
+            this.row = row;
+            this.col = col;
+        }
     }
 
     public static void main(String[] args) {

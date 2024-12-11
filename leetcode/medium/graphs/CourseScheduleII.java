@@ -24,7 +24,9 @@ public class CourseScheduleII {
 
         // Initialize the graph
         for (int[] pre : prerequisites) {
-            int target = pre[0], preCourse = pre[1];
+            int target = pre[0];
+            int preCourse = pre[1];
+            // Create an edge from preCourse to target
             map.computeIfAbsent(preCourse, k -> new ArrayList<>()).add(target);
             inDegree[target] += 1;
         }
