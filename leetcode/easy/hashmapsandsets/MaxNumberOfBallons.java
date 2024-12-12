@@ -1,11 +1,5 @@
-package easy.hashmapsandsets;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-
 /*
-    https://leetcode.com/problems/maximum-number-of-balloons/description/
+ *   https://leetcode.com/problems/maximum-number-of-balloons/description/
  */
 public class MaxNumberOfBallons {
 
@@ -34,13 +28,5 @@ public class MaxNumberOfBallons {
 
         return Math.min(map.getOrDefault('b', 0), Math.min(map.getOrDefault('a', 0), 
                 Math.min(map.getOrDefault('l', 0), Math.min(map.getOrDefault('o', 0), map.getOrDefault('n', 0)))));
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        MaxNumberOfBallons m = new MaxNumberOfBallons();
-        System.out.println(m.maxNumberOfBalloons("loonbalxballpoon"));
     }
 }

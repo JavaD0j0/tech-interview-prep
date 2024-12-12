@@ -1,10 +1,5 @@
-package medium.arrayandstrings;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-
 /*
-    https://leetcode.com/problems/merge-intervals/description/
+ *  https://leetcode.com/problems/merge-intervals/description/
  */
 public class MergeIntervals {
     /*
@@ -36,16 +31,5 @@ public class MergeIntervals {
         }
 
         return result.toArray(int[][]::new);
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[][] intervals = {{1, 4}, {3, 6}, {7, 9}};
-        int[][] result = new MergeIntervals().merge(intervals);
-        for (int[] interval : result) {
-            System.out.println(interval[0] + " " + interval[1]);
-        }
     }
 }

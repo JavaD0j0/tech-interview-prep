@@ -1,7 +1,5 @@
-package medium.slidingwindow;
-
 /*
-    https://leetcode.com/problems/max-consecutive-ones-iii/description/
+ *  https://leetcode.com/problems/max-consecutive-ones-iii/description/
  */
 public class MaxConsecutiveOnesIII {
     /*
@@ -31,14 +29,5 @@ public class MaxConsecutiveOnesIII {
         }
 
         return max;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] nums = { 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 };
-        int k = 2;
-        System.out.println(new MaxConsecutiveOnesIII().longestOnes(nums, k));
     }
 }

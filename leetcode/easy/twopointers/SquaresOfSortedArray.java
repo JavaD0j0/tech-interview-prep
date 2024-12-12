@@ -1,7 +1,5 @@
-package easy.twopointers;
-
-/**
-    https://leetcode.com/problems/squares-of-a-sorted-array/description/
+/*
+ *   https://leetcode.com/problems/squares-of-a-sorted-array/description/
  */
 public class SquaresOfSortedArray {
 
@@ -30,16 +28,5 @@ public class SquaresOfSortedArray {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] nums = { -4, -1, 0, 3, 10 };
-        int[] result = sortedSquares(nums);
-        for (int i : result) {
-            System.out.println(i);
-        }
     }
 }

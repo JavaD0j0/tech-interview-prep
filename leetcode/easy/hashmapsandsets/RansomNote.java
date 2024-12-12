@@ -1,9 +1,5 @@
-package easy.hashmapsandsets;
-
-import java.util.HashMap;
-
 /*
-    https://leetcode.com/problems/ransom-note/description/
+ *   https://leetcode.com/problems/ransom-note/description/
  */
 public class RansomNote {
     /*
@@ -27,22 +23,5 @@ public class RansomNote {
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        String ransomNote = "a";
-        String magazine = "b";
-        System.out.println(new RansomNote().canConstruct(ransomNote, magazine));
-
-        ransomNote = "aa";
-        magazine = "ab";
-        System.out.println(new RansomNote().canConstruct(ransomNote, magazine));
-
-        ransomNote = "aa";
-        magazine = "aab";
-        System.out.println(new RansomNote().canConstruct(ransomNote, magazine));
     }
 }

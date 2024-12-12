@@ -1,7 +1,5 @@
-package medium.arrayandstrings;
-
 /*
-    https://leetcode.com/problems/product-of-array-except-self/description/
+ *  https://leetcode.com/problems/product-of-array-except-self/description/
  */
 public class ProductOfArrayExceptSelf {
     /*
@@ -26,17 +24,5 @@ public class ProductOfArrayExceptSelf {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        ProductOfArrayExceptSelf obj = new ProductOfArrayExceptSelf();
-        int[] nums = { 1, 2, 3, 4 };
-        int[] result = obj.productExceptSelf(nums);
-        for (int i : result) {
-            System.out.println(i);
-        }
     }
 }

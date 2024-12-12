@@ -1,9 +1,5 @@
-package easy.hashmapsandsets;
-
-import java.util.HashMap;
-
 /*
-    https://leetcode.com/problems/two-sum/description/
+ *   https://leetcode.com/problems/two-sum/description/
  */
 public class TwoSum {
     
@@ -27,15 +23,5 @@ public class TwoSum {
         }
 
         return null;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] arr = { 2, 7, 11, 15 };
-        int target = 9;
-        int[] result = new TwoSum().twoSum(arr, target);
-        System.out.println(result[0] + " " + result[1]);
     }
 }

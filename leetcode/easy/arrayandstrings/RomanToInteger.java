@@ -1,5 +1,3 @@
-package easy.arrayandstrings;
-
 /*
  * https://leetcode.com/problems/roman-to-integer/description/
  */
@@ -40,12 +38,4 @@ public class RomanToInteger {
             default -> 0;
         };
   }
-
-  public static void main(String[] args) {
-      System.out.println();
-      System.out.println();
-
-      RomanToInteger romanToInteger = new RomanToInteger();
-      System.out.println(romanToInteger.romanToInt("MCMXCIV"));
-    }
 }

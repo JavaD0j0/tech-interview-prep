@@ -1,11 +1,5 @@
-package medium.twopointers;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /*
-    https://leetcode.com/problems/3sum/description/
+ *  https://leetcode.com/problems/3sum/description/
  */
 public class ThreeSum {
     /*
@@ -52,16 +46,5 @@ public class ThreeSum {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] numbers = { -1, 0, 1, 2, -1, -4 };
-        List<List<Integer>> result = threeSum(numbers);
-        for (List<Integer> list : result) {
-            System.out.println(list);
-        }
     }
 }

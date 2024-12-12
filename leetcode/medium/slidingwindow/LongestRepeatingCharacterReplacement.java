@@ -1,10 +1,5 @@
-package medium.slidingwindow;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /*
-    https://leetcode.com/problems/longest-repeating-character-replacement/description/
+ * https://leetcode.com/problems/longest-repeating-character-replacement/description/
  */
 public class LongestRepeatingCharacterReplacement {
     /*
@@ -39,15 +34,5 @@ public class LongestRepeatingCharacterReplacement {
         }
 
         return right - left;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        LongestRepeatingCharacterReplacement obj = new LongestRepeatingCharacterReplacement();
-        System.out.println(obj.characterReplacement("aabccbb", 2));
-        System.out.println(obj.characterReplacement("abab", 2));
-        System.out.println(obj.characterReplacement("a", 100));
     }
 }

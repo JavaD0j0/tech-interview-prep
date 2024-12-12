@@ -1,7 +1,5 @@
-package easy.twopointers;
-
 /*
-    https://leetcode.com/problems/reverse-string/description/
+ *   https://leetcode.com/problems/reverse-string/description/
  */
 public class ReverseString {
     /*
@@ -19,17 +17,6 @@ public class ReverseString {
 
             left++;
             right--;
-        }
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        char[] chars = {'h', 'e', 'l', 'l', 'o'};
-        ReverseString.reverseString(chars);
-        for (char c : chars) {
-            System.out.println(c);
         }
     }
 }

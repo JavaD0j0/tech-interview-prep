@@ -1,5 +1,3 @@
-package easy.arrayandstrings;
-
 /*
  * https://leetcode.com/problems/merge-strings-alternately/description/
  */
@@ -21,15 +19,5 @@ public class MergeStringsAlternately {
         result.append(word1.substring(i));
         result.append(word2.substring(i));
         return result.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        String word1 = "abcd";
-        String word2 = "pq";
-        String result = new MergeStringsAlternately().mergeAlternately(word1, word2);
-        System.out.println(result);
     }
 }

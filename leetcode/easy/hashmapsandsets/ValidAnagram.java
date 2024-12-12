@@ -1,9 +1,5 @@
-package easy.hashmapsandsets;
-
-import java.util.HashMap;
-
 /*
-    https://leetcode.com/problems/valid-anagram/description/
+ *  https://leetcode.com/problems/valid-anagram/description/
  */
 public class ValidAnagram {
     /*
@@ -30,18 +26,5 @@ public class ValidAnagram {
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        String s = "anagram";
-        String t = "nagaram";
-        System.out.println(new ValidAnagram().isAnagram(s, t));
-    
-        s = "rat";
-        t = "car";
-        System.out.println(new ValidAnagram().isAnagram(s, t));
     }
 }

@@ -1,7 +1,5 @@
-package easy.slidingwindow;
-
 /*
-    https://leetcode.com/problems/maximum-average-subarray-i/
+ *  https://leetcode.com/problems/maximum-average-subarray-i/
  */
 public class MaximumAverageSubarrayI {
     /*
@@ -26,14 +24,5 @@ public class MaximumAverageSubarrayI {
         }
 
         return maxAvg;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] nums = { 1, 12, -5, -6, 50, 3 };
-        int k = 4;
-        System.out.println(new MaximumAverageSubarrayI().findMaxAverage(nums, k));
     }
 }

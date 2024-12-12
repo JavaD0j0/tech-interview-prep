@@ -1,5 +1,3 @@
-package easy.arrayandstrings;
-
 /*
  * https://leetcode.com/problems/is-subsequence/description/
  */
@@ -23,16 +21,4 @@ public class IsSubsequence {
 
         return sPointer == sSize;
     }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        IsSubsequence isSubsequence = new IsSubsequence();
-        System.out.println(isSubsequence.isSubsequence("abc", "ahbgdc"));
-
-        System.out.println();
-        System.out.println(isSubsequence.isSubsequence("axc", "ahbgdc"));
-    }
-
 }

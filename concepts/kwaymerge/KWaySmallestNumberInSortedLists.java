@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 /*
-    Given an mm number of sorted lists in ascending order and an integer, k, find the kthkth smallest number among all the given lists.
+    Given an m number of sorted lists in ascending order and an integer, k, find the kth smallest number among all the given lists.
 
     Although there can be repeating values in the lists, each element is considered unique and, therefore, contributes to calculating
     the kth smallest element.
@@ -100,12 +100,25 @@ public class KWaySmallestNumberInSortedLists {
         System.out.println();
         System.out.println();
 
-        List<List<Integer>> lists = List.of(List.of(1, 2, 3), List.of(4, 5, 6), List.of(7, 8, 9));
-        int k = 5;
-        System.out.println(findKthSmallest_naive(lists, k));
+        List<List<Integer>> lists = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        lists.add(list1);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(4);
+        list2.add(5);
+        list2.add(6);
+        lists.add(list2);
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(7);
+        list3.add(8);
+        list3.add(9);
+        lists.add(list3);
+        int k = 13;
 
-        lists = List.of(List.of(1, 2, 3), List.of(4, 5, 6), List.of(7, 8, 9));
-        k = 5;
+        System.out.println(findKthSmallest_naive(lists, k));
         System.out.println(findKthSmallest_optimized(lists, k));
     }
 }

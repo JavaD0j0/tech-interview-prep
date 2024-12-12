@@ -1,5 +1,3 @@
-package easy.arrayandstrings;
-
 /*
  * https://leetcode.com/problems/find-closest-number-to-zero/description/
  */
@@ -22,19 +20,5 @@ public class FindClosestNumberToZero {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] nums = { -4, -2, 1, 4, 8 };
-        System.out.println(new FindClosestNumberToZero().findClosestNumber(nums));
-
-        nums = new int[] { -1000, -1000 };
-        System.out.println(new FindClosestNumberToZero().findClosestNumber(nums));
-
-        nums = new int[] { 2, 1, 1, -1, 100000 };
-        System.out.println(new FindClosestNumberToZero().findClosestNumber(nums));
     }
 }

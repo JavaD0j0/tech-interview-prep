@@ -1,5 +1,3 @@
-package medium.twopointers;
-
 /*
     https://leetcode.com/problems/container-with-most-water/description/
  */
@@ -27,14 +25,5 @@ public class ContainerWithMostWater {
         }
 
         return maxArea;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        int[] height = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
-        int max = maxArea(height);
-        System.out.println(max);
     }
 }

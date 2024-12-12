@@ -1,13 +1,3 @@
-package medium.graphs;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-
 /*
  * https://leetcode.com/problems/course-schedule-ii/description/
  */
@@ -54,16 +44,5 @@ public class CourseScheduleII {
         }
 
         return index == numCourses ? order : new int[0];
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-        
-        CourseScheduleII courseScheduleII = new CourseScheduleII();
-        int numCourses = 4;
-        int[][] prerequisites = {{1, 0}, {2, 0}, {3, 1}, {3, 2}};
-        int[] order = courseScheduleII.findOrder(numCourses, prerequisites);
-        System.out.println(Arrays.toString(order));
     }
 }

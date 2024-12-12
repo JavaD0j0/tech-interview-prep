@@ -1,10 +1,5 @@
-package medium.slidingwindow;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /*
-    https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+ *  https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
  */
 public class LongestSubstringWithoutRepeatingChars {
     /*
@@ -38,13 +33,5 @@ public class LongestSubstringWithoutRepeatingChars {
         }
 
         return max;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        LongestSubstringWithoutRepeatingChars obj = new LongestSubstringWithoutRepeatingChars();
-        System.out.println(obj.lengthOfLongestSubstring("abcabcbb"));
     }
 }

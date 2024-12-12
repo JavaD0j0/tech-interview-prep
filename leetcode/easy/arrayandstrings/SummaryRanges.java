@@ -1,8 +1,3 @@
-package easy.arrayandstrings;
-
-import java.util.ArrayList;
-import java.util.List;
-
 /*
  * https://leetcode.com/problems/summary-ranges/description/
  */
@@ -33,17 +28,5 @@ public class SummaryRanges {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        SummaryRanges summaryRanges = new SummaryRanges();
-        int[] nums = { 0, 1, 2, 4, 5, 7 };
-        List<String> result = summaryRanges.summaryRanges(nums);
-        for (String str : result) {
-            System.out.println(str);
-        }
     }
 }

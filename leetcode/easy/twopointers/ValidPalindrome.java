@@ -1,7 +1,5 @@
-package easy.twopointers;
-
-/**
-    https://leetcode.com/problems/valid-palindrome/description/
+/*
+ * https://leetcode.com/problems/valid-palindrome/description/
  */
 public class ValidPalindrome {
 
@@ -30,13 +28,5 @@ public class ValidPalindrome {
             right--;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(isPalindrome("race a car"));
     }
 }

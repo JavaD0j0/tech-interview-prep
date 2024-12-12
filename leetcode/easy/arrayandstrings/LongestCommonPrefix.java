@@ -1,7 +1,5 @@
-package easy.arrayandstrings;
-
 /*
-    https://leetcode.com/problems/longest-common-prefix/description/
+ *   https://leetcode.com/problems/longest-common-prefix/description/
  */
 public class LongestCommonPrefix {
     /*
@@ -33,17 +31,5 @@ public class LongestCommonPrefix {
         }
 
         return output.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-
-        String[] strs = {"flower", "flow", "flight"};
-        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
-        System.out.println(longestCommonPrefix.longestCommonPrefix(strs));
-
-        strs = new String[]{"dog", "racecar", "car"};
-        System.out.println(longestCommonPrefix.longestCommonPrefix(strs));
     }
 }
