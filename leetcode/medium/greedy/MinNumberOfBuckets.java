@@ -3,7 +3,7 @@
  */
 public class MinNumberOfBuckets {
     /*
-     * Time Complexity: O(n^2)
+     * Time Complexity: O(n)
      * Space Complexity: O(n)
      */
     public static int minimumBucketsBruteForce(String street) {
