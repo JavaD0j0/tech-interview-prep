@@ -26,6 +26,7 @@ public class MaxNumberOfBallons {
             return 0;
         }
 
+        // Count the number of 'b', 'a', 'l', 'o', and 'n' characters
         return Math.min(map.getOrDefault('b', 0), Math.min(map.getOrDefault('a', 0), 
                 Math.min(map.getOrDefault('l', 0), Math.min(map.getOrDefault('o', 0), map.getOrDefault('n', 0)))));
     }
