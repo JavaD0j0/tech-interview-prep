@@ -6,7 +6,7 @@ public class CountGoodNodesInBinaryTree {
      * Time Complexity: O(n^2)
      * Space Complexity: O(h)
      */
-    public static int countGoodNodes(TreeNode root) {
+    public static int countGoodNodesBruteForce(TreeNode root) {
         if (root == null) return 0;
         return dfsBruteForce(root, root.val);
     }
